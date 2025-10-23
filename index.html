@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteamBuddy Help & Features</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #1f2937; color: #f9fafb; }
+    .section { margin-bottom: 2rem; }
+    .feature-icon { font-size: 2rem; margin-right: 1rem; }
+  </style>
+</head>
+<body class="font-sans p-8 max-w-4xl mx-auto">
+  <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+    <div class="flex items-center mb-6">
+      <h1 class="text-3xl font-bold text-gray-100">SteamBuddy Help & Features</h1>
+      <button onclick="window.close()" class="ml-auto bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md">Close</button>
+    </div>
+
+    <p class="text-gray-300 mb-6">Welcome to SteamBuddy! This extension enhances your Steam experience by automating redirects, checking game availability from repack sites, and displaying review summaries. Below, you'll find explanations for all features.</p>
+
+    <!-- Feature 1: Redirect to Steam Client -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">🚀</span>
+        Open in Steam Client (Redirect)
+      </h2>
+      <p class="text-gray-300 mb-2">Automatically redirects Steam Store links (e.g., from web searches or external sites) to open directly in the Steam client using the <code>steam://store/[APPID]</code> protocol.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>Works on game pages like <code>https://store.steampowered.com/app/12345/</code>.</li>
+        <li>Handles PatchBot redirects (e.g., affiliate links).</li>
+        <li>Toggle: Enable/disable via the main switch in the popup.</li>
+        <li>Delay: 2-second buffer to ensure page loads before redirect.</li>
+      </ul>
+      <p class="text-sm text-yellow-400">Tip: If Steam isn't running, it will launch the client.</p>
+    </div>
+
+    <!-- Feature 2: Age Check Automation -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">🛡️</span>
+        Auto Age Verification
+      </h2>
+      <p class="text-gray-300 mb-2">Bypasses Steam's age gate on mature-rated games by auto-filling a default birthdate (18+ years ago) and submitting the form.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>Triggers on pages like <code>https://store.steampowered.com/agecheck/app/[APPID]/</code>.</li>
+        <li>Sets: Day=1, Month=January, Year=Current Year - 18.</li>
+        <li>Always on when redirect is enabled.</li>
+      </ul>
+      <p class="text-sm text-yellow-400">Note: This is for convenience; ensure you're of legal age to view content.</p>
+    </div>
+
+    <!-- Feature 3: Ratings Overview -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">⭐</span>
+        Ratings Badge (Steam Reviews)
+      </h2>
+      <p class="text-gray-300 mb-2">Displays a purple badge below the game title showing Steam user review summary.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>Fetches recent reviews via Steam API.</li>
+        <li>Shows: Positive percentage, score description (e.g., "Very Positive"), and total review count.</li>
+        <li>Example: "Steam-Reviews: 85% Very Positive (12,345 Reviews)".</li>
+        <li>Toggle: Enable/disable in popup; reloads Steam tabs on change.</li>
+      </ul>
+      <p class="text-sm text-yellow-400">Fallback: "Not available" if data can't be loaded.</p>
+    </div>
+
+    <!-- Feature 4: FitGirl Availability Check -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">✅</span>
+        FitGirl Repack Availability
+      </h2>
+      <p class="text-gray-300 mb-2">Scans for game availability on FitGirl Repacks site and shows colored badges under the game title.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>Green badge: Exact match found (with download link and optional magnet).</li>
+        <li>Yellow badge: Similar title detected (check manually).</li>
+        <li>Red badge: Not available.</li>
+        <li>Toggle: Enable/disable in popup; reloads Steam tabs on change.</li>
+        <li>Uses fuzzy matching (Levenshtein distance) for accuracy.</li>
+      </ul>
+      <p class="text-sm text-yellow-400">Data: Fetched from GitHub repo on startup/install.</p>
+    </div>
+
+    <!-- Feature 5: Dodi Availability Check -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">✅</span>
+        Dodi Repack Availability
+      </h2>
+      <p class="text-gray-300 mb-2">Scans for game availability on Dodi Repacks site and shows colored badges under the game title.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>Green badge: Exact match found (with download link and optional magnet).</li>
+        <li>Yellow badge: Similar title detected (check manually).</li>
+        <li>Red badge: Not available.</li>
+        <li>Toggle: Enable/disable in popup; reloads Steam tabs on change.</li>
+        <li>Uses fuzzy matching (Levenshtein distance) for accuracy.</li>
+      </ul>
+      <p class="text-sm text-yellow-400">Data: Fetched from GitHub repo on startup/install.</p>
+    </div>
+
+    <!-- Feature 6: Free Games Button -->
+    <div class="section bg-gray-700 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2 flex items-center">
+        <span class="feature-icon">🎁</span>
+        Check for Free Games & DLCs
+      </h2>
+      <p class="text-gray-300 mb-2">One-click button in popup to open Steam's free games/search page with filters for free items and DLCs.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-400 mb-2">
+        <li>URL: <code>https://store.steampowered.com/search?maxprice=free&specials=1&ndl=1</code>.</li>
+        <li>Opens in new tab.</li>
+      </ul>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="section bg-gray-600 p-4 rounded-md">
+      <h2 class="text-xl font-semibold mb-2">Troubleshooting</h2>
+      <ul class="list-disc pl-6 text-sm text-gray-400">
+        <li>Redirects not working? Ensure Steam client is installed and the main toggle is ON.</li>
+        <li>Badges not showing? Ensure the relevant toggles (Steam Reviews, FitGirl, or Dodi) are ON and reload Steam tabs via the popup.</li>
+        <li>Lists empty? Extension fetches on startup; check network in console (F12).</li>
+        <li>Update: Click toggles to reload lists/tabs.</li>
+      </ul>
+      <p class="text-sm text-yellow-400 mt-2">Feedback? Join our Discord for support: <a href="https://discord.gg/VXhStGKrWu" target="_blank" class="text-blue-400 underline">https://discord.gg/VXhStGKrWu</a></p>
+    </div>
+  </div>
+</body>
+</html>

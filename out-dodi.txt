@@ -445,7 +445,7 @@ Link: https://dodi-repacks.site/days-gone/
 Title: Dead Cells: Medley of Pain Edition (v33 + 5 DLCs + 12 Bonus OSTs + MULTi13) (From 1.8 GB) – [DODI Repack]
 Link: https://dodi-repacks.site/519-dead-cells-v1-7-all-dlcs-bonus-ost-mult-i13-from-608-mb-dodi-repack/
 --------------------
-Title: Dead Island 2: Gold Edition (v1.1062983.0.1 + All DLCs + Bonus OST + MULTi14) (From 36.6 GB) [EMPRESS / DODI Repack]
+Title: Dead Island 2: Ultimate Edition (All DLCs + Bonus Content + Online Multiplayer + MULTi14) [DODI Repack]
 Link: https://dodi-repacks.site/dead-island-2/
 --------------------
 Title: Dead Rising 4: Frank’s Big Package Edition (Update 4 + All DLCs) [DODI Repack]
@@ -1692,6 +1692,9 @@ Link: https://dodi-repacks.site/1642-shieldwall-v-1-0-0-bonus-ost-multi11-from-1
 --------------------
 Title: Shin Megami Tensei V: Vengeance (v1.0.1 + All DLCs + MULTi13) (Ryujinx) [Portable]
 Link: https://dodi-repacks.site/shin-megami-tensei-v-vengeance/
+--------------------
+Title: Shining Resonance Refrain
+Link: https://dodi-repacks.site/shining-resonance-refrain/
 --------------------
 Title: Ship Graveyard Simulator 2 (v4607 + MULTi13) [DODI Repack]
 Link: https://dodi-repacks.site/ship-graveyard-simulator-2/

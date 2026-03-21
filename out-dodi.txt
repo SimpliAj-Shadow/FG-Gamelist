@@ -1,6 +1,6 @@
 --- DODI Repacks Scraping ---
 
-Gefundene Spiele: 926
+Gefundene Spiele: 928
 
 Title: DODI Repacks
 Link: https://dodi-repacks.site/
@@ -12,6 +12,10 @@ Magnet: Nicht gefunden
 --------------------
 Title: Contacts
 Link: https://dodi-repacks.site/contacts/
+Magnet: Nicht gefunden
+--------------------
+Title: Hypervisor Repacks
+Link: https://dodi-repacks.site/hypervisor-repacks/
 Magnet: Nicht gefunden
 --------------------
 Title: 7 Days to Die (v1.0 – b333 – Final Release + Bonus Content + MULTi14) (From 10.2 GB) [DODI Repack]
@@ -592,6 +596,10 @@ Magnet: Nicht gefunden
 --------------------
 Title: Crime Simulator (MULTi12) [DODI Repack]
 Link: https://dodi-repacks.site/crime-simulator/
+Magnet: Nicht gefunden
+--------------------
+Title: Crimson Desert: Deluxe Edition (All DLCs + MULTi14) [DODI Repack]
+Link: https://dodi-repacks.site/crimson-desert/
 Magnet: Nicht gefunden
 --------------------
 Title: Crimson Snow (2023) (MULTi10) – [DODI Repack]
